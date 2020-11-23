@@ -1,0 +1,29 @@
+@media screen and (max-width: 1000px) {
+  header .container {
+    width: 100vw;
+    height: 8vh;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header .logo {
+    width: auto;
+    height: 5vh;
+    margin: 5px;
+  }
+
+  header i {
+    display: inline;
+  }
+
+  header .menu {
+    display: none;
+  }
+
+  main .container {
+    margin-top: 10vh;
+    margin-left: 2vh;
+    width: calc(100vw - 4vh);
+    height: 88vh;
+  }
+}

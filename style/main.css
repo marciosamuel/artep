@@ -1,0 +1,88 @@
+/* Paleta de cores */
+:root {
+  --white: #f0eff4;
+  --primary-lighten: #387f8b;
+  --primary: #2c4d5d;
+  --primary-darken: #042233;
+  --black: #1e1e1e;
+}
+
+/* Reset CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Elementos base */
+
+body {
+  color: var(--black);
+  background-color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #eeeeeeaa, #ffffffcc),
+    url("/img/textura.jpg");
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: var(--black);
+  flex-direction: column;
+  width: 20vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+header .logo {
+  width: 80%;
+  margin-top: 10vh;
+}
+
+header .menu {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+header .menu a {
+  color: var(--primary-lighten);
+  text-decoration: none;
+  transition: 0.3s ease all;
+  margin-top: 5vh;
+  font-size: 24px;
+  font-weight: 600;
+  outline: none;
+}
+
+header .menu a:hover {
+  color: var(--white);
+}
+
+header .menu .disabled {
+  color: var(--white);
+  pointer-events: none;
+}
+
+header i {
+  display: none;
+  color: white;
+  margin-right: 15px;
+  font-size: 5vh;
+}
+
+main .container {
+  display: flex;
+  width: 77vw;
+  height: calc(100vh - 3vw);
+  margin-left: 21.5vw;
+  margin-top: 1.5vw;
+  background: linear-gradient(to right, #dddddd60, #ffffff60),
+    url("/img/home.png");
+  background-size: cover;
+  background-position: center;
+}
