@@ -68,8 +68,11 @@ header .menu .disabled {
   pointer-events: none;
 }
 
-header i {
+header .icone-menu {
   display: none;
+}
+
+header i {
   color: white;
   margin-right: 15px;
   font-size: 5vh;
