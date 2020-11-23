@@ -22,7 +22,7 @@ body {
   background-color: var(--white);
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(to right, #eeeeeeaa, #ffffffcc),
-    url("/img/textura.jpg");
+    url("../img/textura.jpg");
 }
 
 header .container {
@@ -82,7 +82,7 @@ main .container {
   margin-left: 21.5vw;
   margin-top: 1.5vw;
   background: linear-gradient(to right, #dddddd60, #ffffff60),
-    url("/img/home.png");
+    url("../img/home.png");
   background-size: cover;
   background-position: center;
 }
