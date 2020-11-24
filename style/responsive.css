@@ -1,4 +1,9 @@
 @media screen and (max-width: 1000px) {
+  body {
+    background: linear-gradient(to right, #eeeeeeaa, #ffffffcc),
+      url("../img/textura-s.jpg");
+  }
+
   header .container {
     width: 100vw;
     height: 8vh;
@@ -25,5 +30,7 @@
     margin-left: 2vh;
     width: calc(100vw - 4vh);
     height: 88vh;
+    background: linear-gradient(to right, #dddddd60, #ffffff60),
+      url("../img/home-s.png");
   }
 }
