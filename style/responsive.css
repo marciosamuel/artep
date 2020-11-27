@@ -1,9 +1,4 @@
-@media screen and (max-width: 1000px) {
-  body {
-    background: linear-gradient(to right, #eeeeeeaa, #ffffffcc),
-      url("../img/textura-s.jpg");
-  }
-
+@media screen and (max-width: 700px) {
   header .container {
     width: 100vw;
     height: 8vh;
@@ -26,11 +21,38 @@
   }
 
   main .container {
-    margin-top: 10vh;
     margin-left: 2vh;
     width: calc(100vw - 4vh);
+  }
+
+  main #inicio .container {
+    margin-top: 10vh;
     height: 88vh;
-    background: linear-gradient(to right, #dddddd60, #ffffff60),
-      url("../img/home-s.png");
+  }
+
+  main .sobre {
+    height: 52%;
+    margin-top: 2vh;
+  }
+
+  main .sobre h1 {
+    padding: 1vw 4vh;
+    margin-left: -2vh;
+    margin-right: -2vh;
+    font-size: 5vh;
+  }
+
+  main .sobre p {
+    font-size: 5vw;
+    padding: 0 4vw;
+  }
+
+  main .banner {
+    height: 38%;
+    margin-top: 2vh;
+    background: linear-gradient(to right, #00000050, #00000080),
+      url("../img/sobre-mobile.jpg");
+    background-position: center;
+    background-size: cover;
   }
 }
