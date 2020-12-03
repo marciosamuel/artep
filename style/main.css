@@ -21,129 +21,151 @@
   box-sizing: border-box;
 }
 
-/* Elementos base */
-
 body {
-  color: var(--black);
-  background-color: var(--white);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #1e1e1e;
+  background-color: #f0eff4;
+  font-family: "Oswald";
   background: linear-gradient(to right, #eeeeeeaa, #ffffffcc),
     url("../img/textura.jpg");
+  font-size: 14px;
+  width: calc(100vw - 10px);
 }
 
-p {
-  font-family: "Oswald";
-}
-
-header .container {
+.container {
   display: flex;
-  align-items: center;
-  justify-content: start;
-  background-color: var(--black);
   flex-direction: column;
-  width: 20vw;
-  height: 100vh;
+}
+
+.menu {
+  background-color: #1e1e1e;
+  width: 100%;
+  height: 8vh;
+  color: #f0eff4;
   position: fixed;
   left: 0;
   top: 0;
 }
 
-header .logo {
-  width: 80%;
-  margin-top: 10vh;
-}
-
-header .menu {
+.menu .header {
   display: flex;
+  justify-content: space-between;
+  height: 8vh;
+  align-items: center;
+}
+
+.header .logo {
+  height: 6vh;
+}
+
+.header .icone-menu {
+  display: flex;
+  color: white;
+  font-size: 6vh;
+  background: #387f8b00;
+  padding: 1vh 1.5vw;
+  cursor: pointer;
+  border: none;
+  outline: 0;
+}
+
+.menu .botao-ativo {
+  background: #387f8b;
+}
+
+.menu .itens {
+  display: flex;
+  background-color: #1e1e1e;
+  border-top: 1px solid #2c4d5d;
   flex-direction: column;
-  margin: 10px;
 }
 
-header .menu a {
-  color: var(--primary-lighten);
-  text-decoration: none;
-  transition: 0.3s ease all;
-  font-size: 2.5vw;
-  margin-top: 10px;
-  font-weight: 600;
-  outline: none;
-  font-family: "Oswald";
-}
-
-header .menu a:hover {
-  color: var(--white);
-}
-
-header .menu .disabled {
-  color: var(--white);
-  pointer-events: none;
-}
-
-header .icone-menu {
+.menu .disabled {
   display: none;
 }
 
-header i {
-  color: white;
-  margin-right: 15px;
+.menu .itens a {
+  color: #387f8b;
   font-size: 5vh;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  transition: ease all 0.3s;
+}
+
+.menu .itens a:hover {
+  color: #f0eff4;
+  background-color: #387f8b;
+}
+
+#inicio,
+#sobre {
+  width: 100%;
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+}
+
+#inicio {
+  margin-top: 8vh;
+  align-items: center;
 }
 
 main .container {
-  display: flex;
-  width: 75.8vw;
-  height: calc(100vh - 3vw);
-  margin-left: 21.5vw;
-  margin-top: 1.5vw;
-  margin-bottom: 1.5vw;
+  height: calc(92vh - 5vw);
+  width: 95vw;
 }
 
-main #inicio .container {
-  background: linear-gradient(to right, #dddddd60, #ffffff60),
+#inicio .container {
+  justify-content: center;
+  background: linear-gradient(to right, #aaaaaa80, #ffffff80),
     url("../img/home.jpg");
   background-size: cover;
   background-position: center;
 }
 
-main #sobre .container {
-  display: flex;
-  flex-direction: column;
+.quem-somos {
+  background-color: #1e1e1e;
+  color: #f0eff4;
+  padding: 10px;
 }
 
-main .sobre {
-  background-color: var(--black);
-  color: var(--white);
-  height: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+.quem-somos h1 {
+  font-size: 3.2rem;
+  background: #042233aa;
+  padding: 0 3vw;
+  margin: 0 -3.5vw;
 }
 
-main .sobre h1 {
-  padding: 1vh 3vw;
-  font-size: 6vh;
-  margin-left: -1.5vw;
-  margin-right: -1.5vw;
-  background-color: #042233aa;
+.quem-somos p {
+  font-size: 1.3rem;
+  padding: 5px 0;
 }
 
-main .sobre p {
-  font-size: 3.5vh;
-  padding: 0 1.5vw;
-  text-align: justify;
-}
-
-main .banner {
-  display: flex;
-  background: linear-gradient(to right, #00000050, #00000080),
-    url("../img/sobre-desktop.jpg");
+.banner {
+  height: 45%;
+  margin-top: 2.5vw;
+  background-color: linear-gradient(to right, #00000020, #00000050);
+  background-image: url("../img/sobre-mobile.jpg");
   background-position: center;
   background-size: cover;
-  margin-top: 1.5vw;
-  height: 57%;
+  display: flex;
   justify-content: center;
 }
 
-main .slogan {
-  width: 80%;
+.slogan {
+  width: 90vw;
+}
+
+/* Scroll */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #1e1e1e30;
+}
+::-webkit-scrollbar-thumb {
+  background: #042233;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 3px 13px 1px;
 }

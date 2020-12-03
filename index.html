@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="/style/responsive.css">
     <script src="https://kit.fontawesome.com/04aa1ead44.js" crossorigin="anonymous"></script>
     <title>ARTEP</title>
 </head>
@@ -13,16 +13,20 @@
 <body>
     <header>
         <div class="container">
-            <img src="./img/1 triangulo + artep branco.svg" alt="logo da artep" class="logo">
-            <div class="icone-menu">
-                <i class="fas fa-bars"></i>
-            </div>
             <nav class="menu">
-                <a href="#">INICIO</a>
-                <a href="#sobre">QUEM SOMOS</a>
-                <a href="#">SERVIÇOS</a>
-                <a href="#">CLIENTES</a>
-                <a href="#">CONTATO</a>
+                <div class="header">
+                    <img src="./img/logo-branco.svg" alt="logo da artep" class="logo">
+
+                    <button type="button" id="icone-menu" class="icone-menu" onclick="toggleMenu()"><i
+                            class="fas fa-bars"></i></button>
+                </div>
+                <div class="itens disabled" id="menu-itens">
+                    <a href="#" onclick="toggleMenu()">INICIO</a>
+                    <a href="#sobre" onclick="toggleMenu()">QUEM SOMOS</a>
+                    <a href="#servicos" onclick="toggleMenu()">SERVIÇOS</a>
+                    <a href="#" onclick="toggleMenu()">CLIENTES</a>
+                    <a href="#" onclick="toggleMenu()">CONTATO</a>
+                </div>
             </nav>
         </div>
     </header>
@@ -30,13 +34,13 @@
     <main>
         <div id="inicio">
             <div class="container">
-                <img src="./img/1 triangulo + artep colorido.svg" alt="logo da artep">
+                <img src="./img/logo-colorido.svg" alt="logo da artep">
             </div>
         </div>
 
         <div id="sobre">
             <div class="container">
-                <div class="sobre">
+                <div class="quem-somos">
                     <h1>QUEM SOMOS</h1>
                     <p>A ARTEP surgiu como todo projeto surge, com uma boa dose de iniciativa. Iniciativa que dar força
                         a perseverança, e, com
@@ -48,13 +52,16 @@
                     </p>
                 </div>
                 <div class="banner">
-                    <img src="./img/slogan-mobile.svg"
+                    <img src="./img/slogan.svg"
                         alt="slogan artep: Artep, a arte de perfurar, de persistir e aperfeiçoar!" class="slogan">
                 </div>
             </div>
         </div>
     </main>
 
+
+
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

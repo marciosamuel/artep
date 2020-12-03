@@ -1,58 +1,71 @@
-@media screen and (max-width: 700px) {
-  header .container {
-    width: 100vw;
-    height: 8vh;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  header .logo {
-    width: auto;
-    height: 5vh;
-    margin: 5px;
-  }
-
-  header .icone-menu {
-    display: inline;
-  }
-
-  header .menu {
+@media screen and (min-width: 768px) {
+  .menu .icone-menu {
     display: none;
   }
 
+  .menu {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+  }
+
+  .menu .header {
+    justify-content: center;
+    height: 25vh;
+    align-items: flex-end;
+  }
+
+  .header .logo {
+    width: 90%;
+    height: auto;
+  }
+
+  .menu .disabled {
+    display: flex;
+    border: none;
+    margin-top: 15px;
+  }
+
+  .menu .itens a {
+    font-size: 3vw;
+  }
+
+  #inicio,
+  #sobre {
+    width: 80%;
+    height: 100vh;
+    margin-left: 20%;
+    margin-top: unset;
+  }
+
   main .container {
-    margin-left: 2vh;
-    width: calc(100vw - 4vh);
+    height: 95vh;
+    width: calc(80vw - 5vh);
   }
 
-  main #inicio .container {
-    margin-top: 10vh;
-    height: 88vh;
+  .quem-somos {
+    padding: 20px;
   }
 
-  main .sobre {
-    height: 52%;
-    margin-top: 2vh;
+  .quem-somos h1 {
+    font-size: 4rem;
+    padding: 0 3.5vh;
+    margin: 0 -4.5vh;
   }
 
-  main .sobre h1 {
-    padding: 1vw 4vh;
-    margin-left: -2vh;
-    margin-right: -2vh;
-    font-size: 5vh;
+  .quem-somos p {
+    font-size: 1.9rem;
+    padding: 10px 0;
   }
 
-  main .sobre p {
-    font-size: 5vw;
-    padding: 0 4vw;
+  .banner {
+    height: 50%;
+    margin-top: 2.5vh;
+    background-image: url("../img/sobre-desktop.jpg");
   }
 
-  main .banner {
-    height: 38%;
-    margin-top: 2vh;
-    background: linear-gradient(to right, #00000050, #00000080),
-      url("../img/sobre-mobile.jpg");
-    background-position: center;
-    background-size: cover;
+  .slogan {
+    width: 90%;
   }
 }
