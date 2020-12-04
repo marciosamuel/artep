@@ -98,7 +98,10 @@ body {
 }
 
 #inicio,
-#sobre {
+#sobre,
+#servicos,
+#clientes,
+#contato {
   width: 100%;
   height: 92vh;
   display: flex;
@@ -123,20 +126,25 @@ main .container {
   background-position: center;
 }
 
-.quem-somos {
+.quem-somos,
+.nossos-servicos,
+.vem-ai,
+.clientes,
+.contato {
   background-color: #1e1e1e;
   color: #f0eff4;
   padding: 10px;
+  text-align: justify;
 }
 
-.quem-somos h1 {
+h1 {
   font-size: 3.2rem;
   background: #042233aa;
   padding: 0 3vw;
   margin: 0 -3.5vw;
 }
 
-.quem-somos p {
+p {
   font-size: 1.3rem;
   padding: 5px 0;
 }
@@ -154,6 +162,10 @@ main .container {
 
 .slogan {
   width: 90vw;
+}
+
+.square img {
+  height: 50px;
 }
 
 /* Scroll */
