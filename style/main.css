@@ -138,14 +138,14 @@ main .container {
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 9vw;
   background: #042233aa;
   padding: 0 3vw;
   margin: 0 -3.5vw;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 4vw;
   padding: 5px 0;
 }
 
@@ -161,7 +161,8 @@ p {
 }
 
 .slogan {
-  width: 90vw;
+  width: 100%;
+  padding: 10px;
 }
 
 .cards {
@@ -220,7 +221,7 @@ p {
   align-items: center;
   text-align: center;
   background-color: #387f8bcc;
-  font-size: 2rem;
+  font-size: 6vw;
   padding: 20px;
 }
 
@@ -229,7 +230,7 @@ p {
 }
 
 .cards h2 {
-  font-size: 2.2rem;
+  font-size: 7vw;
   color: #f0eff4;
 }
 
