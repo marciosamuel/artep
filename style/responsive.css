@@ -32,7 +32,10 @@
   }
 
   #inicio,
-  #sobre {
+  #sobre,
+  #servicos,
+  #clientes,
+  #contato {
     width: 80%;
     height: 100vh;
     margin-left: 20%;

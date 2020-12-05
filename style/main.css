@@ -25,7 +25,7 @@ body {
   color: #1e1e1e;
   background-color: #f0eff4;
   font-family: "Oswald";
-  background: linear-gradient(to right, #eeeeeeaa, #ffffffcc),
+  background: linear-gradient(to right, #f0eff4aa, #f0eff4cc),
     url("../img/textura.jpg");
   font-size: 14px;
   width: calc(100vw - 10px);
@@ -98,7 +98,10 @@ body {
 }
 
 #inicio,
-#sobre {
+#sobre,
+#servicos,
+#clientes,
+#contato {
   width: 100%;
   height: 92vh;
   display: flex;
@@ -117,27 +120,32 @@ main .container {
 
 #inicio .container {
   justify-content: center;
-  background: linear-gradient(to right, #aaaaaa80, #ffffff80),
+  background: linear-gradient(to right, #f0eff450, #f0eff480),
     url("../img/home.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.quem-somos {
+.quem-somos,
+.nossos-servicos,
+.vem-ai,
+.clientes,
+.contato {
   background-color: #1e1e1e;
   color: #f0eff4;
   padding: 10px;
+  text-align: justify;
 }
 
-.quem-somos h1 {
+h1 {
   font-size: 3.2rem;
   background: #042233aa;
   padding: 0 3vw;
   margin: 0 -3.5vw;
 }
 
-.quem-somos p {
-  font-size: 1.3rem;
+p {
+  font-size: 1.5rem;
   padding: 5px 0;
 }
 
@@ -154,6 +162,75 @@ main .container {
 
 .slogan {
   width: 90vw;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: 0 5vw;
+  text-align: center;
+}
+
+.container-card {
+  height: auto;
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  height: 80vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+.card-1 {
+  background: linear-gradient(#f0eff480, #f0eff480),
+    url("/img/FOTO\ -\ Cravações\ Diversas.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.card-2 {
+  background: linear-gradient(#f0eff480, #f0eff480),
+    url("/img/FOTO\ -\ Fundações\ Diversas.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.card-3 {
+  background: linear-gradient(#f0eff480, #f0eff480),
+    url("/img/FOTO\ -\ Terraplangem.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.container-card .frente {
+  height: 75vw;
+  max-width: 75vw;
+}
+
+.container-card .verso {
+  width: 100%;
+  height: 80vw;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #387f8bcc;
+  font-size: 2rem;
+  padding: 20px;
+}
+
+.container-card .disabled {
+  display: none;
+}
+
+.cards h2 {
+  font-size: 2.2rem;
+  color: #f0eff4;
 }
 
 /* Scroll */
