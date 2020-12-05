@@ -190,21 +190,21 @@ p {
 
 .card-1 {
   background: linear-gradient(#f0eff480, #f0eff480),
-    url("/img/FOTO\ -\ Cravações\ Diversas.png");
+    url("../img/FOTO\ -\ Cravações\ Diversas.png");
   background-position: center;
   background-size: cover;
 }
 
 .card-2 {
   background: linear-gradient(#f0eff480, #f0eff480),
-    url("/img/FOTO\ -\ Fundações\ Diversas.png");
+    url("../img/FOTO\ -\ Fundações\ Diversas.png");
   background-position: center;
   background-size: cover;
 }
 
 .card-3 {
   background: linear-gradient(#f0eff480, #f0eff480),
-    url("/img/FOTO\ -\ Terraplangem.png");
+    url("../img/FOTO\ -\ Terraplangem.png");
   background-position: center;
   background-size: cover;
 }
