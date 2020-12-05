@@ -21,10 +21,14 @@
     height: auto;
   }
 
+  .menu .itens {
+    margin-top: 15px;
+    border: none;
+  }
+
   .menu .disabled {
     display: flex;
     border: none;
-    margin-top: 15px;
   }
 
   .menu .itens a {
@@ -47,28 +51,66 @@
     width: calc(80vw - 5vh);
   }
 
-  .quem-somos {
+  .quem-somos,
+  .nossos-servicos,
+  .vem-ai,
+  .clientes,
+  .contato {
     padding: 20px;
   }
 
-  .quem-somos h1 {
-    font-size: 4rem;
+  .quem-somos {
+    height: 50vh;
+  }
+
+  h1 {
+    font-size: 4vw;
     padding: 0 3.5vh;
     margin: 0 -4.5vh;
   }
 
-  .quem-somos p {
-    font-size: 1.9rem;
+  p {
+    font-size: 2vw;
     padding: 10px 0;
   }
 
   .banner {
-    height: 50%;
+    height: 45vh;
     margin-top: 2.5vh;
     background-image: url("../img/sobre-desktop.jpg");
   }
 
   .slogan {
-    width: 90%;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .cards {
+    margin: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    width: 22vw;
+    height: 22vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-card .frente {
+    height: 20vw;
+    max-width: 20vw;
+  }
+
+  .container-card .verso {
+    width: 22vw;
+    height: 22vw;
+    font-size: 1.8vw;
+  }
+
+  .cards h2 {
+    font-size: 2vw;
   }
 }
