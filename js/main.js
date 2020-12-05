@@ -1,3 +1,17 @@
+$(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        768: {
+            items: 3,
+        },
+    },
+});
+
 let botao_menu = document.querySelector('#icone-menu');
 botao_menu.addEventListener("click", () => {
     document.querySelector('#menu-itens').classList.toggle('disabled')
@@ -18,4 +32,3 @@ cards.forEach((card) => {
         card.querySelector('.verso').classList.toggle('disabled')
     })
 })
-

@@ -129,12 +129,19 @@ main .container {
 .quem-somos,
 .nossos-servicos,
 .vem-ai,
-.clientes,
+.nossos-clientes,
 .contato {
   background-color: #1e1e1e;
   color: #f0eff4;
   padding: 10px;
   text-align: justify;
+}
+
+.nossos-servicos,
+.vem-ai,
+.nossos-clientes,
+.contato {
+  margin-bottom: 2.5vw;
 }
 
 h1 {
@@ -252,6 +259,28 @@ p {
 .cards h2 {
   font-size: 7vw;
   color: #f0eff4;
+}
+
+.carrossel {
+  width: 91vw;
+}
+
+.owl-carousel {
+  padding: 25px;
+  margin: 2.5vw;
+  background-color: #fff;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 80vw;
+  height: 80vw;
+}
+
+.item .triangulo {
+  height: 60vw;
 }
 
 /* Scroll */

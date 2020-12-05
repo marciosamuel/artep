@@ -57,15 +57,16 @@
     width: calc(80vw - 5vh);
   }
 
-  .quem-somos,
   .nossos-servicos,
   .vem-ai,
-  .clientes,
+  .nossos-clientes,
   .contato {
     padding: 20px;
+    margin-bottom: 2.5vh;
   }
 
   .quem-somos {
+    padding: 20px;
     height: 50vh;
   }
 
@@ -81,8 +82,8 @@
   }
 
   .banner {
-    height: 45vh;
     margin: 2.5vh 0;
+    height: 45vh;
     background-image: url("../img/sobre-desktop.jpg");
   }
 
@@ -118,5 +119,19 @@
 
   .cards h2 {
     font-size: 2vw;
+  }
+
+  .carrossel {
+    width: calc(80vw - 5vh);
+  }
+
+  .owl-carousel {
+    margin: unset;
+    margin-bottom: 2.5vh;
+  }
+
+  .item {
+    width: 22vw;
+    height: 22vw;
   }
 }
