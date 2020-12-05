@@ -103,18 +103,17 @@ body {
 #clientes,
 #contato {
   width: 100%;
-  height: 92vh;
   display: flex;
   justify-content: center;
 }
 
 #inicio {
+  height: 92vh;
   margin-top: 8vh;
   align-items: center;
 }
 
 main .container {
-  height: calc(92vh - 5vw);
   width: 95vw;
 }
 
@@ -124,6 +123,7 @@ main .container {
     url("../img/home.jpg");
   background-size: cover;
   background-position: center;
+  height: calc(92vh - 5vw);
 }
 
 .quem-somos,
@@ -150,8 +150,8 @@ p {
 }
 
 .banner {
-  height: 45%;
-  margin-top: 2.5vw;
+  height: 45vh;
+  margin: 2.5vw 0;
   background-color: linear-gradient(to right, #00000020, #00000050);
   background-image: url("../img/sobre-mobile.jpg");
   background-position: center;
@@ -185,7 +185,7 @@ p {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 .card-1 {
@@ -209,6 +209,20 @@ p {
   background-size: cover;
 }
 
+.card-4 {
+  background: linear-gradient(#f0eff480, #f0eff480),
+    url("../img/FOTO\ -\ Arquitetura.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.card-5 {
+  background: linear-gradient(#f0eff480, #f0eff480),
+    url("../img/FOTO\ -\ Urbanismo.png");
+  background-position: center;
+  background-size: cover;
+}
+
 .container-card .frente {
   height: 75vw;
   max-width: 75vw;
@@ -218,11 +232,17 @@ p {
   width: 100%;
   height: 80vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   text-align: center;
   background-color: #387f8bcc;
   font-size: 6vw;
   padding: 20px;
+}
+
+.container-card li {
+  list-style-type: none;
 }
 
 .container-card .disabled {

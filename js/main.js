@@ -18,3 +18,4 @@ cards.forEach((card) => {
         card.querySelector('.verso').classList.toggle('disabled')
     })
 })
+
