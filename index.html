@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="/style/responsive.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="shortcut icon" href="./img/triangulo colorido.svg" />
     <script src="https://kit.fontawesome.com/04aa1ead44.js" crossorigin="anonymous"></script>
     <title>ARTEP</title>
 </head>
@@ -17,28 +18,27 @@
                 <div class="header">
                     <img src="./img/logo-branco.svg" alt="logo da artep" class="logo">
 
-                    <button type="button" id="icone-menu" class="icone-menu" onclick="toggleMenu()"><i
-                            class="fas fa-bars"></i></button>
+                    <button type="button" id="icone-menu" class="icone-menu"><i class="fas fa-bars"></i></button>
                 </div>
                 <div class="itens disabled" id="menu-itens">
-                    <a href="#" onclick="toggleMenu()">INICIO</a>
-                    <a href="#sobre" onclick="toggleMenu()">QUEM SOMOS</a>
-                    <a href="#servicos" onclick="toggleMenu()">SERVIÇOS</a>
-                    <a href="#" onclick="toggleMenu()">CLIENTES</a>
-                    <a href="#" onclick="toggleMenu()">CONTATO</a>
+                    <a href="#">INICIO</a>
+                    <a href="#sobre">QUEM SOMOS</a>
+                    <a href="#servicos">SERVIÇOS</a>
+                    <a href="#clientes">CLIENTES</a>
+                    <a href="#contato">CONTATO</a>
                 </div>
             </nav>
         </div>
     </header>
 
     <main>
-        <div id="inicio">
+        <section id="inicio">
             <div class="container">
                 <img src="./img/logo-colorido.svg" alt="logo da artep">
             </div>
-        </div>
+        </section>
 
-        <div id="sobre">
+        <section id="sobre">
             <div class="container">
                 <div class="quem-somos">
                     <h1>QUEM SOMOS</h1>
@@ -56,12 +56,94 @@
                         alt="slogan artep: Artep, a arte de perfurar, de persistir e aperfeiçoar!" class="slogan">
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section id="servicos">
+            <div class="container">
+                <div class="nossos-servicos">
+                    <h1>NOSSOS SERVIÇOS</h1>
+                    <p>Atualmente a ARTEP oferece os seguintes serviços diferenciados:</p>
+                    <div class="cards">
+                        <div class="container-card">
+                            <div class="card card-1">
+                                <img src="./img/Desenho - Escavações .svg" alt="Gravações e Estacas Raiz"
+                                    class="frente">
+                                <span class="verso disabled">
+                                    As estacas possuem ampla variedade de dimensões, formatos e modelos – fator que
+                                    garante
+                                    abrangência de atendimento a
+                                    demandas de projetos.
+                                </span>
+                            </div>
+                            <h2 class="legenda">GRAVAÇÕES E ESTACAS RAIZ</h2>
+                            <img src="./img/COTAS 02 VEM AI - MOBILE.svg">
+                        </div>
+                        <div class="container-card">
+                            <div class="card card-2">
+                                <img src="./img/Desenho - Fundações Diversas.svg" alt="Fundações Diversas"
+                                    class="frente">
+                                <span class="verso disabled">
+                                    A execução de fundações diversas para edifícios e outras obras de engenharia civil,
+                                    inclusive a cravação de estacas
+                                </span>
+                            </div>
+                            <h2 class="legenda">FUNDAÇÕES DIVERSAS</h2>
+                            <img src="./img/COTAS 02 VEM AI - MOBILE.svg">
+                        </div>
+                        <div class="container-card">
+                            <div class="card card-3">
+                                <img src="./img/Desenho - Sondagem.svg" alt="terraplanagem" class="frente">
+                                <span class="verso disabled">
+                                    O conjunto de operações de escavação, transporte, depósito e compactação de terras,
+                                    necessárias à realização de uma
+                                    obra.
+                                </span>
+                            </div>
+                            <h2 class="legenda">TERRAPLANAGEM</h2>
+                            <img src="./img/COTAS 02 VEM AI - MOBILE.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="vem-ai">
+                    <h1>VEM AÍ</h1>
+                    <p>A ARTEP pretende incluir em seu portfólio, serviços de ARQUITETURA E URBANISMO.</p>
+                    <div class="cards">
+                        <div class="container-card">
+                            <div class="card card-4">
+                                <img src="./img/Desenho - Arquitetura .svg" alt="Arquitetura" class="frente">
+                                <span class="verso disabled">
+                                    Consultoria e de prestação de serviços técnicos de arquitetura:
+                                    <ul>
+                                        <li>Arquitetura Residencial</li>
+                                        <li>Arquitetura Comercial</li>
+                                        <li>Arquitetura Institucional</li>
+                                    </ul>
+                                </span>
+                            </div>
+                            <h2 class="legenda">ARQUITETURA</h2>
+                            <img src="./img/COTAS 02 VEM AI - MOBILE.svg">
+                        </div>
+                        <div class="container-card">
+                            <div class="card card-5">
+                                <img src="./img/Desenho - Urbanismo.svg" alt="Urbanismo" class="frente">
+                                <span class="verso disabled">
+                                    Construção de vias urbanas, ruas e locais para estacionamento de veículos. A
+                                    construção de praças e trabalhos de
+                                    superfície e pavimentação em vias urbanas, ruas, praças e calçadas.
+                                </span>
+                            </div>
+                            <h2 class="legenda">URBANISMO</h2>
+                            <img src="./img/COTAS 02 VEM AI - MOBILE.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
 
-    <script src="/js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
