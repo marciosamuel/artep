@@ -1,4 +1,8 @@
 @media screen and (min-width: 768px) {
+  body{
+    margin-top: unset;
+  }
+
   .menu .icone-menu {
     display: none;
   }
@@ -43,6 +47,8 @@
     width: 80%;
     margin-left: 20%;
     margin-top: unset;
+      border-top: unset;
+  margin-top:unset;
   }
 
   #inicio {

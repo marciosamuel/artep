@@ -21,6 +21,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   color: #1e1e1e;
   background-color: #f0eff4;
@@ -29,6 +30,7 @@ body {
     url("../img/textura.jpg");
   font-size: 14px;
   width: calc(100vw - 10px);
+  margin-top: 8vh;
 }
 
 .container {
@@ -97,7 +99,6 @@ body {
   background-color: #387f8b;
 }
 
-#inicio,
 #sobre,
 #servicos,
 #clientes,
@@ -105,11 +106,18 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  border-top: 8vh solid transparent;
+  margin-top: -8vh;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
 }
 
 #inicio {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   height: 92vh;
-  margin-top: 8vh;
   align-items: center;
 }
 
