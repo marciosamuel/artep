@@ -1,0 +1,91 @@
+/* Paleta de cores */
+:root {
+  --white: #f0eff4;
+  --primary-lighten: #387f8b;
+  --primary: #2c4d5d;
+  --primary-darken: #042233;
+  --black: #1e1e1e;
+  --cyan: #d9e6e5;
+  --new-blue: #014A5B;
+}
+
+/* Fontes */
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-Regular.ttf");
+}
+
+/* Reset CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald';
+}
+
+/* MENU */
+
+nav {
+    display: flex;
+    background: url('../img/nav/menu\ superior.png');
+    background-size: cover;
+    width: 100%;
+    height: 8vh;
+    color: #f0eff4;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu .logo {
+    height: 8vh;
+    padding: 5px;
+}
+
+.menu .icone-menu {
+    width: 8vh;
+    font-size: 5vh;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: #f0eff4;
+    cursor: pointer;
+}
+
+.menu .botao-ativo {
+    background-color: #042233;
+}
+
+nav .itens-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #606060cc;
+}
+
+nav .itens-menu a {
+    width: 100%;
+    font-size: 5vh;
+    color: #f0eff4;
+    text-align: center;
+    text-decoration: none;
+    transition: ease all 0.3s;
+}
+
+nav .itens-menu a:hover {
+  color: #f0eff4;
+  background-color: #042233;
+}
+
+nav .disabled {
+    display: none;
+}

@@ -1,143 +1,69 @@
 @media screen and (min-width: 768px) {
-  body{
-    margin-top: unset;
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    background: linear-gradient(to right, #60606011, #60606044), url('../img/nav/menu\ laterial.png');
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+  }
+
+  .menu {
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .menu .logo {
+    width: 80%;
+    height: auto;
   }
 
   .menu .icone-menu {
     display: none;
   }
 
-  .menu {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    height: 100vh;
-  }
-
-  .menu .header {
-    justify-content: center;
-    height: 25vh;
-    align-items: flex-end;
-  }
-
-  .header .logo {
-    width: 90%;
-    height: auto;
-  }
-
-  .menu .itens {
-    margin-top: 15px;
+  nav .itens-menu {
     border: none;
+    background-color: transparent;
   }
 
-  .menu .disabled {
+  nav .itens-menu .ativo {
+      background-color: #014A5B;
+  }
+
+  nav .disabled {
     display: flex;
     border: none;
   }
 
-  .menu .itens a {
-    font-size: 3vw;
+  nav .itens-menu a {
+    font-size: 2.5vw;
+    text-align: justify;
+    padding-left: 2.5vw;
+    margin: 1vh 0;
   }
 
-  #inicio,
-  #sobre,
-  #servicos,
-  #clientes,
-  #contato {
-    width: 80%;
-    margin-left: 20%;
-    margin-top: unset;
-      border-top: unset;
-  margin-top:unset;
-  }
-
-  #inicio {
-    height: 100vh;
-  }
-
-  #inicio .container {
-    height: 95vh;
-  }
-
-  main .container {
-    width: calc(80vw - 5vh);
-  }
-
-  .nossos-servicos,
-  .vem-ai,
-  .nossos-clientes,
-  .contato {
-    padding: 20px;
-    margin-bottom: 2.5vh;
-  }
-
-  .quem-somos {
-    padding: 20px;
-    height: 50vh;
-  }
-
-  h1 {
-    font-size: 4vw;
-    padding: 0 3.5vh;
-    margin: 0 -4.5vh;
-  }
-
-  p {
-    font-size: 2vw;
-    padding: 10px 0;
-  }
-
-  .banner {
-    margin: 2.5vh 0;
-    height: 45vh;
-    background-image: url("../img/sobre-desktop.jpg");
-  }
-
-  .slogan {
-    width: 100%;
+  nav .contato-menu {
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     padding: 15px;
   }
 
-  .cards {
-    margin: 0;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
+  nav .contato-menu i {
+      color: #f0eff4;
+      background-color: #014A5B;
+      padding: 10px;
+      border-radius: 50px;
+      font-size: 2vw;
+      text-align: center;
+      width: 3.5vw;
+      box-shadow: -3px 3px #444;
   }
 
-  .card {
-    width: 22vw;
-    height: 22vw;
-    margin: 20px;
-    padding: 0;
-  }
-
-  .container-card .frente {
-    height: 20vw;
-    max-width: 20vw;
-  }
-
-  .container-card .verso {
-    width: 22vw;
-    height: 22vw;
-    font-size: 1.8vw;
-  }
-
-  .cards h2 {
-    font-size: 2vw;
-  }
-
-  .carrossel {
-    width: calc(80vw - 5vh);
-  }
-
-  .owl-carousel {
-    margin: unset;
-    margin-bottom: 2.5vh;
-  }
-
-  .item {
-    width: 22vw;
-    height: 22vw;
-  }
 }
