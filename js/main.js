@@ -10,6 +10,7 @@ $(".owl-carousel").owlCarousel({
             items: 3,
         },
     },
+    autoplay: true,
 });
 
 let $doc = $('html, body');
