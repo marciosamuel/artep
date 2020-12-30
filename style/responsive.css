@@ -30,16 +30,21 @@
     background: url("../img/home/background-mobile.png");
     background-size: cover;
     background-position: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
   }
 
   #home .logo {
-    display: none;
+    width: 27vw;
+    margin: unset;
+    padding: 1vh 1vw;
   }
 
   #home .texto-biblico {
-    display: none;
+    width: 27vw;
+    margin: unset;
+    padding: 1vh 2vw;
+    font-size: 1.7vw;
   }
 }
 
@@ -90,8 +95,12 @@
 
   header nav {
     display: none;
-    background-color: #777;
+    background: linear-gradient(to right, #ffffff22, #00000022),
+      url("../img/nav/menu\ superior.png");
+    background-size: cover;
+    background-position: center;
     align-items: center;
+    text-align: center;
   }
 
   header .menu-ativo {
@@ -130,5 +139,18 @@
   #home {
     height: 88vh;
     width: calc(100vw - 4vh);
+  }
+
+  #home .logo {
+    width: 38vw;
+    margin: unset;
+    padding: 2.5vh 0;
+  }
+
+  #home .texto-biblico {
+    width: 38vw;
+    margin: unset;
+    padding: 2.5vh 2vw;
+    font-size: 2.5vw;
   }
 }
