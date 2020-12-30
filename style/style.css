@@ -1,0 +1,163 @@
+/* Paleta de cores */
+:root {
+  --white: #f0eff4;
+  --primary-lighten: #387f8b;
+  --primary: #2c4d5d;
+  --primary-darken: #042233;
+  --black: #1e1e1e;
+  --cyan: #d9e6e5;
+  --new-blue: #014a5b;
+}
+
+/* Fontes */
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-Regular.ttf");
+}
+
+/* Reset CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald";
+}
+
+/* Menu */
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 100vh;
+  background: linear-gradient(to right, #ffffff22, #00000022),
+    url("../img/nav/menu\ laterial.png");
+  background-size: cover;
+  background-position: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+header .logo {
+  display: flex;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+header .logo img {
+  width: 80%;
+  padding: 5px;
+}
+
+header .logo .icone-menu {
+  display: none;
+}
+
+header nav {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav .itens-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+nav .itens-menu a {
+  font-size: 2.5vw;
+  padding-left: 2.5vw;
+  margin: 1vh 0;
+  color: #f0eff4;
+  text-decoration: none;
+  transition: ease all 0.3s;
+}
+
+nav .itens-menu a:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+nav .itens-menu .link-ativo {
+  background-color: #014a5b;
+  pointer-events: none;
+}
+
+nav .contato-menu {
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 15px;
+}
+
+nav .contato-menu i {
+  color: #f0eff4;
+  background-color: #014a5b;
+  border-radius: 50%;
+  font-size: 2vw;
+  text-align: center;
+  padding: 20%;
+  height: 3.5vw;
+  width: 3.5vw;
+  box-shadow: -3px 3px #333;
+}
+
+/* Container de conteúdo */
+
+main {
+  width: 80vw;
+  height: 100vh;
+  margin-left: 20vw;
+  background: linear-gradient(to right, #ffffff88, #ffffffcc),
+    url("../img/textura-fundo.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Pagina Home */
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 95vh;
+  width: calc(80vw - 5vh);
+  background: url("../img/home/background-desktop.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#home .logo {
+  width: 30vw;
+  padding: 0 2.5vw;
+}
+
+#home .texto-biblico {
+  width: 30vw;
+  padding: 0 2.5vw 0 4vw;
+  font-size: 1.5vw;
+  color: #1e1e1e;
+}
+
+#home .texto-biblico p {
+  text-align: justify;
+}
+
+#home .texto-biblico .versiculo {
+  text-align: right;
+}
+
+/* Página sobre */
