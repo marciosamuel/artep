@@ -1,71 +1,257 @@
-@media screen and (min-width: 768px) {
-  .menu .icone-menu {
+/* Tablet */
+@media screen and (max-width: 900px) {
+  /* Menu */
+  header {
+    width: 30vw;
+  }
+
+  header .logo img {
+    width: 90%;
+  }
+
+  nav .itens-menu a {
+    font-size: 3.5vw;
+    padding-left: 3.5vw;
+  }
+
+  nav .contato-menu i {
+    font-size: 3vw;
+    height: 5vw;
+    width: 5vw;
+  }
+
+  /* Container de conteúdo */
+  main {
+    width: 68vw;
+    margin-left: 30vw;
+  }
+
+  #home,
+  #quem-somos,
+  #servicos {
+    width: calc(68vw - 5vh);
+  }
+
+  h1 {
+    width: 67vw;
+  }
+
+  #home {
+    background: url("../img/home/background-mobile.png");
+    background-size: cover;
+    background-position: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  #home .logo {
+    width: 27vw;
+    margin: unset;
+    padding: 1vh 1vw;
+  }
+
+  #home .texto-biblico {
+    width: 27vw;
+    margin: unset;
+    padding: 1vh 2vw;
+    font-size: 1.7vw;
+  }
+  #quem-somos article {
+    height: 75vh;
+  }
+
+  #quem-somos article h2 {
+    font-size: 2.5vw;
+  }
+
+  #servicos .card {
+    max-width: 18vw;
+    height: 18vw;
+  }
+
+  #servicos .frente {
+    height: 18vw;
+    width: 18vw;
+  }
+
+  #servicos h2 {
+    margin-top: 3vh;
+    font-size: 1.5vw;
+  }
+
+  #servicos .verso {
+    width: 18vw;
+    height: 18vw;
+    font-size: 1.5vw;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    width: 97vw;
+    height: 8vh;
+    background: linear-gradient(to right, #ffffff22, #00000022),
+      url("../img/nav/menu\ superior.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  header .logo {
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    padding: 5px;
+  }
+
+  header .logo img {
+    height: calc(8vh - 10px);
+    width: auto;
+    padding: unset;
+  }
+
+  header .logo .icone-menu {
+    display: flex;
+    padding: 5px;
+    height: calc(8vh - 10px);
+    width: calc(8vh - 10px);
+    font-size: 4vh;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f0eff466;
+    background-color: transparent;
+    color: #f0eff4;
+    cursor: pointer;
+    outline: none;
+  }
+
+  header .logo .icone-menu:hover {
+    background-color: #f0eff466;
+  }
+  header .logo .botao-ativo {
+    background-color: #f0eff466;
+  }
+
+  header nav {
+    display: none;
+    background: linear-gradient(to right, #ffffff22, #00000022),
+      url("../img/nav/menu\ superior.png");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  header .menu-ativo {
+    display: flex;
+  }
+
+  nav .itens-menu {
+    width: 100%;
+  }
+
+  nav .itens-menu a {
+    font-size: 4vh;
+    margin: unset;
+    padding: 1vh 5vw;
+  }
+
+  nav .itens-menu a:hover {
+    transform: none;
+  }
+
+  nav .contato-menu {
     display: none;
   }
 
-  .menu {
-    display: flex;
+  /* Container de conteúdo */
+
+  main {
+    width: 97vw;
+    position: absolute;
+    top: 8vh;
+    margin-left: unset;
+  }
+
+  /* Pagina Home */
+
+  #home,
+  #quem-somos,
+  #servicos {
+    height: 88vh;
+    width: calc(97vw - 4vh);
+  }
+
+  #home .logo {
+    width: 38vw;
+    margin: unset;
+    padding: 2.5vh 0;
+  }
+
+  #home .texto-biblico {
+    width: 38vw;
+    margin: unset;
+    padding: 2.5vh 2vw;
+    font-size: 2.5vw;
+  }
+
+  h1 {
+    width: 96vw;
+    height: 8vh;
+    font-size: 5vh;
+    margin-left: -1.5vh;
+  }
+
+  #quem-somos article {
     flex-direction: column;
-    width: 20%;
-    height: 100vh;
+    height: 70vh;
   }
 
-  .menu .header {
-    justify-content: center;
-    height: 25vh;
-    align-items: flex-end;
+  #quem-somos article h2 {
+    width: unset;
+    font-size: 4vh;
   }
 
-  .header .logo {
-    width: 90%;
-    height: auto;
+  #quem-somos article img {
+    width: unset;
+    height: 30vh;
   }
 
-  .menu .disabled {
-    display: flex;
-    border: none;
-    margin-top: 15px;
-  }
-
-  .menu .itens a {
-    font-size: 3vw;
-  }
-
-  #inicio,
-  #sobre {
+  #quem-somos article p {
     width: 80%;
-    height: 100vh;
-    margin-left: 20%;
-    margin-top: unset;
+    font-size: 2.5vh;
   }
 
-  main .container {
-    height: 95vh;
-    width: calc(80vw - 5vh);
+  #servicos {
+    height: 220vh;
   }
 
-  .quem-somos {
-    padding: 20px;
+  #servicos p {
+    font-size: 4vh;
   }
 
-  .quem-somos h1 {
-    font-size: 4rem;
-    padding: 0 3.5vh;
-    margin: 0 -4.5vh;
+  #servicos .cards {
+    flex-direction: column;
+    height: 195vh;
   }
 
-  .quem-somos p {
-    font-size: 1.9rem;
-    padding: 10px 0;
+  #servicos .card {
+    height: 60vw;
+    max-width: 60vw;
   }
 
-  .banner {
-    height: 50%;
-    margin-top: 2.5vh;
-    background-image: url("../img/sobre-desktop.jpg");
+  #servicos .frente {
+    height: 60vw;
+    width: 60vw;
   }
 
-  .slogan {
-    width: 90%;
+  #servicos .verso {
+    height: 60vw;
+    font-size: 5vw;
+    width: 60vw;
+  }
+
+  #servicos h2 {
+    font-size: 5vw;
   }
 }
