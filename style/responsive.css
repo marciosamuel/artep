@@ -137,7 +137,8 @@
 
   main {
     width: 97vw;
-    margin-top: 8vh;
+    position: absolute;
+    top: 8vh;
     margin-left: unset;
   }
 
@@ -172,7 +173,7 @@
 
   #quem-somos article {
     flex-direction: column;
-    height: 75vh;
+    height: 70vh;
   }
 
   #quem-somos article h2 {
