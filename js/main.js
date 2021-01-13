@@ -42,6 +42,8 @@ $(document).ready(function () {
       if (refElem.position().top <= currentScrollPos && refElem.position().top + refElem.height() > currentScrollPos) {
         //Remove class link-ativo in all nav
         $('.navegacao').removeClass("link-ativo");
+        $('nav').removeClass("menu-ativo");
+        $('.icone-menu').removeClass('botao-ativo');
         //Add class link-ativo
         curLink.addClass("link-ativo");
       }

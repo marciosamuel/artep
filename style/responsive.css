@@ -27,8 +27,13 @@
   }
 
   #home,
-  #quem-somos {
+  #quem-somos,
+  #servicos {
     width: calc(68vw - 5vh);
+  }
+
+  h1 {
+    width: 67vw;
   }
 
   #home {
@@ -51,8 +56,34 @@
     padding: 1vh 2vw;
     font-size: 1.7vw;
   }
+  #quem-somos article {
+    height: 75vh;
+  }
+
   #quem-somos article h2 {
     font-size: 2.5vw;
+  }
+
+  #servicos .card {
+    max-width: 18vw;
+    height: 18vw;
+  }
+
+  #servicos .frente {
+    height: 18vw;
+    width: 18vw;
+  }
+
+  #servicos h2 {
+    margin-top: 3vh;
+    font-size: 1.5vw;
+  }
+
+  #servicos .verso {
+    width: 18vw;
+    height: 18vw;
+    font-size: 1.5vw;
+    padding: 10px;
   }
 }
 
@@ -189,5 +220,38 @@
   #quem-somos article p {
     width: 80%;
     font-size: 2.5vh;
+  }
+
+  #servicos {
+    height: 220vh;
+  }
+
+  #servicos p {
+    font-size: 4vh;
+  }
+
+  #servicos .cards {
+    flex-direction: column;
+    height: 195vh;
+  }
+
+  #servicos .card {
+    height: 60vw;
+    max-width: 60vw;
+  }
+
+  #servicos .frente {
+    height: 60vw;
+    width: 60vw;
+  }
+
+  #servicos .verso {
+    height: 60vw;
+    font-size: 5vw;
+    width: 60vw;
+  }
+
+  #servicos h2 {
+    font-size: 5vw;
   }
 }
