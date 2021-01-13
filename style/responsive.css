@@ -1,156 +1,143 @@
-/* Tablet */
-@media screen and (max-width: 900px) {
-  /* Menu */
-  header {
-    width: 30vw;
+@media screen and (min-width: 768px) {
+  body{
+    margin-top: unset;
   }
 
-  header .logo img {
-    width: 90%;
+  .menu .icone-menu {
+    display: none;
   }
 
-  nav .itens-menu a {
-    font-size: 3.5vw;
-    padding-left: 3.5vw;
-  }
-
-  nav .contato-menu i {
-    font-size: 3vw;
-    height: 5vw;
-    width: 5vw;
-  }
-
-  /* Container de conteúdo */
-  main {
-    width: 70vw;
-    margin-left: 30vw;
-  }
-  #home {
-    width: calc(70vw - 5vh);
-    background: url("../img/home/background-mobile.png");
-    background-size: cover;
-    background-position: center;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-  }
-
-  #home .logo {
-    width: 27vw;
-    margin: unset;
-    padding: 1vh 1vw;
-  }
-
-  #home .texto-biblico {
-    width: 27vw;
-    margin: unset;
-    padding: 1vh 2vw;
-    font-size: 1.7vw;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  header {
-    width: 100vw;
-    height: 8vh;
-    background: linear-gradient(to right, #ffffff22, #00000022),
-      url("../img/nav/menu\ superior.png");
-    background-size: cover;
-    background-position: center;
-  }
-
-  header .logo {
+  .menu {
     display: flex;
-    justify-content: space-between;
-    height: 8vh;
-    padding: 5px;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
   }
 
-  header .logo img {
-    height: calc(8vh - 10px);
-    width: auto;
-    padding: unset;
-  }
-
-  header .logo .icone-menu {
-    display: flex;
-    padding: 5px;
-    height: calc(8vh - 10px);
-    width: calc(8vh - 10px);
-    font-size: 4vh;
-    align-items: center;
+  .menu .header {
     justify-content: center;
-    border: 1px solid #f0eff466;
-    background-color: transparent;
-    color: #f0eff4;
-    cursor: pointer;
-    outline: none;
+    height: 25vh;
+    align-items: flex-end;
   }
 
-  header .logo .icone-menu:hover {
-    background-color: #f0eff466;
-  }
-  header .logo .botao-ativo {
-    background-color: #f0eff466;
+  .header .logo {
+    width: 90%;
+    height: auto;
   }
 
-  header nav {
-    display: none;
-    background: linear-gradient(to right, #ffffff22, #00000022),
-      url("../img/nav/menu\ superior.png");
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-    text-align: center;
+  .menu .itens {
+    margin-top: 15px;
+    border: none;
   }
 
-  header .menu-ativo {
+  .menu .disabled {
     display: flex;
+    border: none;
   }
 
-  nav .itens-menu {
+  .menu .itens a {
+    font-size: 3vw;
+  }
+
+  #inicio,
+  #sobre,
+  #servicos,
+  #clientes,
+  #contato {
+    width: 80%;
+    margin-left: 20%;
+    margin-top: unset;
+      border-top: unset;
+  margin-top:unset;
+  }
+
+  #inicio {
+    height: 100vh;
+  }
+
+  #inicio .container {
+    height: 95vh;
+  }
+
+  main .container {
+    width: calc(80vw - 5vh);
+  }
+
+  .nossos-servicos,
+  .vem-ai,
+  .nossos-clientes,
+  .contato {
+    padding: 20px;
+    margin-bottom: 2.5vh;
+  }
+
+  .quem-somos {
+    padding: 20px;
+    height: 50vh;
+  }
+
+  h1 {
+    font-size: 4vw;
+    padding: 0 3.5vh;
+    margin: 0 -4.5vh;
+  }
+
+  p {
+    font-size: 2vw;
+    padding: 10px 0;
+  }
+
+  .banner {
+    margin: 2.5vh 0;
+    height: 45vh;
+    background-image: url("../img/sobre-desktop.jpg");
+  }
+
+  .slogan {
     width: 100%;
+    padding: 15px;
   }
 
-  nav .itens-menu a {
-    font-size: 4vh;
+  .cards {
+    margin: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    width: 22vw;
+    height: 22vw;
+    margin: 20px;
+    padding: 0;
+  }
+
+  .container-card .frente {
+    height: 20vw;
+    max-width: 20vw;
+  }
+
+  .container-card .verso {
+    width: 22vw;
+    height: 22vw;
+    font-size: 1.8vw;
+  }
+
+  .cards h2 {
+    font-size: 2vw;
+  }
+
+  .carrossel {
+    width: calc(80vw - 5vh);
+  }
+
+  .owl-carousel {
     margin: unset;
-    padding: 1vh 5vw;
+    margin-bottom: 2.5vh;
   }
 
-  nav .itens-menu a:hover {
-    transform: none;
-  }
-
-  nav .contato-menu {
-    display: none;
-  }
-
-  /* Container de conteúdo */
-
-  main {
-    width: 100vw;
-    height: 92vh;
-    margin-top: 8vh;
-    margin-left: unset;
-  }
-
-  /* Pagina Home */
-
-  #home {
-    height: 88vh;
-    width: calc(100vw - 4vh);
-  }
-
-  #home .logo {
-    width: 38vw;
-    margin: unset;
-    padding: 2.5vh 0;
-  }
-
-  #home .texto-biblico {
-    width: 38vw;
-    margin: unset;
-    padding: 2.5vh 2vw;
-    font-size: 2.5vw;
+  .item {
+    width: 22vw;
+    height: 22vw;
   }
 }
