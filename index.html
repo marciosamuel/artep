@@ -9,6 +9,7 @@
     ></script>
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/responsive.css" />
+    <link rel="stylesheet" href="./style/glide.css" />
     <title>ARTEP</title>
   </head>
 
@@ -24,13 +25,15 @@
       <nav>
         <div class="itens-menu">
           <a href="#home" class="navegacao link-ativo">Home</a>
-          <a href="#sobre" class="navegacao">Quem Somos</a>
+          <a href="#quem-somos" class="navegacao">Quem Somos</a>
           <a href="#servicos" class="navegacao">Nossos Serviços</a>
-          <a href="#em-breve" class="navegacao">Em breve...</a>
+          <a href="#clientes" class="navegacao">Clientes</a>
           <a href="#contato" class="navegacao">Contato</a>
         </div>
         <div class="contato-menu">
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/artepengenharia/"
+            ><i class="fab fa-instagram"></i
+          ></a>
           <a href="#"><i class="fas fa-map-marker-alt"></i></a>
           <a href="#"><i class="fas fa-phone-alt"></i></a>
         </div>
@@ -51,8 +54,54 @@
           <p class="versiculo">Lucas 8:15</p>
         </div>
       </section>
+
+      <section id="quem-somos" class="glide">
+        <h2>QUEM SOMOS</h2>
+        <div class="glide__track" data-glide-el="track">
+          <div class="glide__slides">
+            <article class="glide__slide">
+              <h3>MISSÃO</h3>
+              <img src="./img/quem-somos/Missão.svg" alt="triangulo artep" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                perspiciatis ea dolor rem, quisquam qui doloribus laudantium
+                aperiam voluptas modi nisi ad sapiente incidunt tempore corporis
+                pariatur? Alias, maiores quam!
+              </p>
+            </article>
+            <article class="glide__slide">
+              <h3>VISÃO</h3>
+              <img src="./img/quem-somos/Visão.svg" alt="triangulo artep" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ad
+                suscipit at. Dolorum illum ullam impedit culpa, nesciunt est
+                atque ipsa excepturi numquam, amet, architecto distinctio sed
+                quo possimus saepe!
+              </p>
+            </article>
+            <article class="glide__slide">
+              <h3>VALORES</h3>
+              <img src="./img/quem-somos/Valores.svg" alt="triangulo artep" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita, veniam? Tempore vero dolore corporis nemo?
+                Reprehenderit, dolorem voluptates tenetur architecto,
+                dignissimos voluptatibus fugiat perferendis tempore voluptas
+                ratione, velit non aperiam!
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div data-glide-el="controls[nav]" class="botoes">
+          <button data-glide-dir="=0"></button>
+          <button data-glide-dir="=1"></button>
+          <button data-glide-dir="=2"></button>
+        </div>
+      </section>
     </main>
 
+    <script src="./js/glide.js"></script>
     <script src="./js/main.js" type="text/javascript"></script>
   </body>
 </html>
