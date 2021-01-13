@@ -22,11 +22,16 @@
 
   /* Container de conteúdo */
   main {
-    width: 70vw;
+    width: 68vw;
     margin-left: 30vw;
   }
+
+  #home,
+  #quem-somos {
+    width: calc(68vw - 5vh);
+  }
+
   #home {
-    width: calc(70vw - 5vh);
     background: url("../img/home/background-mobile.png");
     background-size: cover;
     background-position: center;
@@ -46,11 +51,14 @@
     padding: 1vh 2vw;
     font-size: 1.7vw;
   }
+  #quem-somos article h3 {
+    font-size: 2.5vw;
+  }
 }
 
 @media screen and (max-width: 600px) {
   header {
-    width: 100vw;
+    width: 97vw;
     height: 8vh;
     background: linear-gradient(to right, #ffffff22, #00000022),
       url("../img/nav/menu\ superior.png");
@@ -128,17 +136,17 @@
   /* Container de conteúdo */
 
   main {
-    width: 100vw;
-    height: 92vh;
+    width: 97vw;
     margin-top: 8vh;
     margin-left: unset;
   }
 
   /* Pagina Home */
 
-  #home {
+  #home,
+  #quem-somos {
     height: 88vh;
-    width: calc(100vw - 4vh);
+    width: calc(97vw - 4vh);
   }
 
   #home .logo {
@@ -152,5 +160,30 @@
     margin: unset;
     padding: 2.5vh 2vw;
     font-size: 2.5vw;
+  }
+
+  #quem-somos h2 {
+    height: 8vh;
+    font-size: 5vh;
+  }
+
+  #quem-somos article {
+    flex-direction: column;
+    height: 75vh;
+  }
+
+  #quem-somos article h3 {
+    width: unset;
+    font-size: 4vh;
+  }
+
+  #quem-somos article img {
+    width: unset;
+    height: 30vh;
+  }
+
+  #quem-somos article p {
+    width: 80%;
+    font-size: 2.5vh;
   }
 }
