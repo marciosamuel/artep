@@ -5,6 +5,15 @@ botaoMenu.addEventListener("click", () => {
   botaoMenu.classList.toggle("botao-ativo");
 });
 
+const cards = document.querySelectorAll('.card')
+
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    card.querySelector('.frente').classList.toggle('disabled')
+    card.querySelector('.verso').classList.toggle('disabled')
+  })
+})
+
 const glide = new Glide(".glide", {
   type: "carousel",
   autoplay: 5000,
