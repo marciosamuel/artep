@@ -51,7 +51,7 @@
     padding: 1vh 2vw;
     font-size: 1.7vw;
   }
-  #quem-somos article h3 {
+  #quem-somos article h2 {
     font-size: 2.5vw;
   }
 }
@@ -144,7 +144,8 @@
   /* Pagina Home */
 
   #home,
-  #quem-somos {
+  #quem-somos,
+  #servicos {
     height: 88vh;
     width: calc(97vw - 4vh);
   }
@@ -162,9 +163,11 @@
     font-size: 2.5vw;
   }
 
-  #quem-somos h2 {
+  h1 {
+    width: 96vw;
     height: 8vh;
     font-size: 5vh;
+    margin-left: -1.5vh;
   }
 
   #quem-somos article {
@@ -172,7 +175,7 @@
     height: 75vh;
   }
 
-  #quem-somos article h3 {
+  #quem-somos article h2 {
     width: unset;
     font-size: 4vh;
   }
