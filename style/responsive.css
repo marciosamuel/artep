@@ -28,7 +28,9 @@
 
   #home,
   #quem-somos,
-  #servicos {
+  #servicos,
+  #clientes,
+  #contato {
     width: calc(68vw - 5vh);
   }
 
@@ -84,6 +86,19 @@
     height: 18vw;
     font-size: 1.5vw;
     padding: 10px;
+  }
+
+  #clientes .glide__slide {
+    margin: 0 6vw;
+  }
+
+  #clientes .triangulo {
+    width: 50vw;
+  }
+
+  #clientes .cliente {
+    height: 20vh;
+    width: 50vw;
   }
 }
 
@@ -177,7 +192,9 @@
 
   #home,
   #quem-somos,
-  #servicos {
+  #servicos,
+  #clientes,
+  #contato {
     height: 88vh;
     width: calc(97vw - 4vh);
   }
@@ -253,5 +270,20 @@
 
   #servicos h2 {
     font-size: 5vw;
+  }
+
+  #clientes .glide__slide {
+    margin: 0 6vw;
+  }
+
+  #clientes .triangulo {
+    margin-top: 2vh;
+    width: 80vw;
+  }
+
+  #clientes .cliente {
+    margin-top: 1vh;
+    height: 20vh;
+    width: 80vw;
   }
 }

@@ -130,10 +130,13 @@ main {
 
 #home,
 #quem-somos,
-#servicos {
+#servicos,
+#contato,
+#clientes {
   height: 95vh;
   width: calc(78.5vw - 5vh);
   margin: 2.5vh;
+  background-color: #d9e6e5;
 }
 
 /* Pagina Home */
@@ -183,8 +186,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 80vh;
-  background: url("../img/quem-somos/background-desktop.svg");
+  height: 75vh;
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -203,7 +205,7 @@ h1 {
 
 #quem-somos article p {
   width: 25vw;
-  font-size: 1.5vw;
+  font-size: 2vw;
   color: #1e1e1e;
   text-align: justify;
 }
@@ -220,13 +222,13 @@ h1 {
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  background-color: #d9e6e5;
+  background-color: #2c4d5d66;
   outline: none;
   transition: all 0.2s linear;
 }
 
 #quem-somos .botoes button:hover {
-  background-color: #90b4b1;
+  background-color: #2c4d5dbb;
 }
 
 #quem-somos .botoes .glide__bullet--active {
@@ -234,8 +236,8 @@ h1 {
 }
 
 /* Página Serviços */
-#servicos {
-  background-color: #d9e6e5;
+#servicos,
+#contato {
   color: #1e1e1e;
 }
 
@@ -316,4 +318,19 @@ h1 {
     url("../img/servicos/FOTO\ -\ Terraplangem.png");
   background-position: center;
   background-size: cover;
+}
+
+#clientes .glide__slide {
+  margin: 0 2.5vw;
+}
+
+#clientes .triangulo {
+  margin-top: 5vh;
+  width: 30vw;
+}
+
+#clientes .cliente {
+  margin-top: 5vh;
+  height: 10vh;
+  width: 30vw;
 }
