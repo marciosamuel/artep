@@ -28,15 +28,21 @@
           <a href="#home" class="navegacao link-ativo">Home</a>
           <a href="#quem-somos" class="navegacao">Quem Somos</a>
           <a href="#servicos" class="navegacao">Nossos Serviços</a>
-          <!--<a href="#clientes" class="navegacao">Clientes</a>
-          <a href="#contato" class="navegacao">Contato</a>-->
+          <a href="#clientes" class="navegacao">Clientes</a>
+          <a href="#contato" class="navegacao">Contato</a>
         </div>
         <div class="contato-menu">
-          <a href="https://www.instagram.com/artepengenharia/"
+          <a href="https://www.instagram.com/artepengenharia/" target="_blank"
             ><i class="fab fa-instagram"></i
           ></a>
-          <a href="#"><i class="fas fa-map-marker-alt"></i></a>
-          <a href="#"><i class="fas fa-phone-alt"></i></a>
+          <a href="https://goo.gl/maps/EyoqSRJzVFEC9fHj8" target="_blank"
+            ><i class="fas fa-map-marker-alt"></i
+          ></a>
+          <a
+            href="http://api.whatsapp.com/send?1=pt_BR&phone=5571999962448"
+            target="_blank"
+            ><i class="fas fa-phone-alt"></i
+          ></a>
         </div>
       </nav>
     </header>
@@ -56,7 +62,7 @@
         </div>
       </section>
 
-      <section id="quem-somos" class="glide">
+      <section id="quem-somos" class="glide-quem-somos">
         <h1>QUEM SOMOS</h1>
         <div class="glide__track" data-glide-el="track">
           <div class="glide__slides">
@@ -64,31 +70,24 @@
               <h2>MISSÃO</h2>
               <img src="./img/quem-somos/Missão.svg" alt="triangulo artep" />
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                perspiciatis ea dolor rem, quisquam qui doloribus laudantium
-                aperiam voluptas modi nisi ad sapiente incidunt tempore corporis
-                pariatur? Alias, maiores quam!
+                O propósito de nossa empresa é participar de projetos que
+                beneficiem o desenvolvimento de nossa comunidade.
               </p>
             </article>
             <article class="glide__slide">
               <h2>VISÃO</h2>
               <img src="./img/quem-somos/Visão.svg" alt="triangulo artep" />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ad
-                suscipit at. Dolorum illum ullam impedit culpa, nesciunt est
-                atque ipsa excepturi numquam, amet, architecto distinctio sed
-                quo possimus saepe!
+                A ARTEP pretende, com seus projetos, atingir um patamar de
+                reconhecimento entre o mercado de construção civil.
               </p>
             </article>
             <article class="glide__slide">
               <h2>VALORES</h2>
               <img src="./img/quem-somos/Valores.svg" alt="triangulo artep" />
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Expedita, veniam? Tempore vero dolore corporis nemo?
-                Reprehenderit, dolorem voluptates tenetur architecto,
-                dignissimos voluptatibus fugiat perferendis tempore voluptas
-                ratione, velit non aperiam!
+                Zelo pelo cliente;<br />Zelo pela obra;<br />Zelo material e mão
+                de obra;<br />Comprometimento em cada etapa da obra;
               </p>
             </article>
           </div>
@@ -151,6 +150,41 @@
             <h2 class="legenda">TERRAPLANAGEM</h2>
             <img src="./img/servicos/cotas.svg" />
           </div>
+        </div>
+      </section>
+      <section id="clientes" class="glide-clientes">
+        <h1>CLIENTES</h1>
+        <div class="glide__track" data-glide-el="track">
+          <div class="glide__slides">
+            <article class="glide__slide">
+              <img class="triangulo" src="./img/clientes/Ativo1.svg" />
+              <img class="cliente" src="./img/clientes/Cliente1.svg" />
+            </article>
+            <article class="glide__slide">
+              <img class="triangulo" src="./img/clientes/Ativo2.svg" />
+              <img class="cliente" src="./img/clientes/Cliente2.svg" />
+            </article>
+            <article class="glide__slide">
+              <img class="triangulo" src="./img/clientes/Ativo3.svg" />
+              <img class="cliente" src="./img/clientes/Cliente3.svg" />
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="contato">
+        <h1>CONTATO</h1>
+        <div class="form">
+          <p>Entre em contato</p>
+          <form class="form-contato">
+            <input type="text" placeholder="Informe seu nome*" />
+            <input type="email" placeholder="Informe seu email*" />
+            <input type="text" placeholder="Escolha o setor*" />
+            <textarea
+              name="mensagem"
+              placeholder="Escreva sua mensagem*"
+            ></textarea>
+            <button type="button" class="botao">ENVIAR</button>
+          </form>
         </div>
       </section>
     </main>
