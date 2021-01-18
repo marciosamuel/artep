@@ -100,6 +100,45 @@
     height: 20vh;
     width: 50vw;
   }
+
+  #contato .form {
+    font-size: 5vh;
+    padding: 0 2.5%;
+  }
+
+  #contato .form-contato {
+    text-align: center;
+    height: 90%;
+  }
+
+  #contato label {
+    font-size: 3vh;
+  }
+
+  #contato label b {
+    font-size: 3vh;
+  }
+
+  #contato input,
+  select,
+  textarea {
+    width: 70%;
+    margin-right: unset;
+    font-size: 2.5vh;
+  }
+
+  #contato textarea {
+    margin-top: unset;
+    height: 25vh;
+    width: 85%;
+  }
+
+  #contato button {
+    width: 50%;
+    font-size: 3vh;
+    height: 4vh;
+    margin-right: unset;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -285,5 +324,25 @@
     margin-top: 1vh;
     height: 20vh;
     width: 80vw;
+  }
+
+  #contato textarea {
+    height: 20vh;
+  }
+
+  .contato-menu {
+    height: 10vh;
+    width: 97vw;
+    background: linear-gradient(to right, #ffffff22, #00000022),
+      url("../img/nav/menu\ superior.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .contato-menu i {
+    font-size: 5vw;
+    height: 8vw;
+    width: 8vw;
+    margin-bottom: 1.5vh;
   }
 }

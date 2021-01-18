@@ -93,7 +93,7 @@ nav .itens-menu .link-ativo {
   pointer-events: none;
 }
 
-nav .contato-menu {
+.contato-menu {
   height: 20vh;
   display: flex;
   justify-content: space-around;
@@ -101,7 +101,7 @@ nav .contato-menu {
   padding: 0 15px;
 }
 
-nav .contato-menu i {
+.contato-menu i {
   color: #f0eff4;
   background-color: #014a5b;
   border-radius: 50%;
