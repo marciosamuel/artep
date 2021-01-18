@@ -405,6 +405,10 @@ option {
   color: #f0eff4;
   margin-right: 35%;
 }
+
+footer {
+  display: none;
+}
 /* Scroll */
 ::-webkit-scrollbar {
   width: 15px;
