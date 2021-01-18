@@ -330,6 +330,10 @@
     height: 20vh;
   }
 
+  footer .contato-menu {
+    display: flex
+  }
+  
   .contato-menu {
     height: 10vh;
     width: 97vw;
