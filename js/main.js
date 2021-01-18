@@ -54,12 +54,27 @@ $(document).ready(function () {
   }
 });
 
-const glide = new Glide(".glide", {
+new Glide(".glide-quem-somos", {
   type: "carousel",
   autoplay: 5000,
   perView: 1,
   focusAt: 'center',
   gap: 25,
+  hoverpause: true,
+  animationDuration: 600,
+  animationTimingFunc: "linear",
+}).mount();
+
+new Glide('.glide-clientes', {
+  type: "carousel",
+  autoplay: 2500,
+  perView: 2,
+  breakpoints: {
+    900: {
+      perView: 1
+    }
+  },
+  focusAt: 1,
   hoverpause: true,
   animationDuration: 600,
   animationTimingFunc: "linear",

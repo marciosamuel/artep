@@ -1,161 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/04aa1ead44.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/jquery.min.js"></script>
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style/responsive.css" />
-    <link rel="stylesheet" href="./style/glide.css" />
-    <title>ARTEP</title>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/04aa1ead44.js" crossorigin="anonymous"></script>
+  <script src="./js/jquery.min.js"></script>
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/responsive.css" />
+  <link rel="stylesheet" href="./style/glide.css" />
+  <title>ARTEP</title>
 </head>
 
 <body>
-    <header>
-      <div class="logo">
-        <img src="./img/logo-branco.svg" alt="logo da artep" />
+  <header>
+    <div class="logo">
+      <img src="./img/logo-branco.svg" alt="logo da artep" />
 
-        <button type="button" class="icone-menu">
-          <i class="fas fa-bars"></i>
-        </button>
+      <button type="button" class="icone-menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <nav>
+      <div class="itens-menu">
+        <a href="#home" class="navegacao link-ativo">Home</a>
+        <a href="#quem-somos" class="navegacao">Quem Somos</a>
+        <a href="#servicos" class="navegacao">Nossos Serviços</a>
+        <a href="#clientes" class="navegacao">Clientes</a>
+        <a href="#contato" class="navegacao">Contato</a>
       </div>
-      <nav>
-        <div class="itens-menu">
-          <a href="#home" class="navegacao link-ativo">Home</a>
-          <a href="#quem-somos" class="navegacao">Quem Somos</a>
-          <a href="#servicos" class="navegacao">Nossos Serviços</a>
-          <!--<a href="#clientes" class="navegacao">Clientes</a>
-          <a href="#contato" class="navegacao">Contato</a>-->
-        </div>
-        <div class="contato-menu">
-          <a href="https://www.instagram.com/artepengenharia/"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="#"><i class="fas fa-map-marker-alt"></i></a>
-          <a href="#"><i class="fas fa-phone-alt"></i></a>
-        </div>
-    </header>
+      <div class="contato-menu">
+        <a href="https://www.instagram.com/artepengenharia/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://goo.gl/maps/EyoqSRJzVFEC9fHj8" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5571999962448" target="_blank"><i
+            class="fas fa-phone-alt"></i></a>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-      <section id="home">
-        <div class="logo">
-          <img src="./img/logo-colorido.svg" alt="logo artep" />
-        </div>
-        <div class="texto-biblico">
-          <p>
-            "Mas as que caíram em boa terra são os que, com coração bom e
-            generoso, ouvem a palavra, a retêm e dão fruto, com
-            perseverança."<br />
-          </p>
-          <p class="versiculo">Lucas 8:15</p>
-        </div>
-      </section>
+  <main>
+    <section id="home">
+      <div class="logo">
+        <img src="./img/logo-colorido.svg" alt="logo artep" />
+      </div>
+      <div class="texto-biblico">
+        <p>
+          "Mas as que caíram em boa terra são os que, com coração bom e
+          generoso, ouvem a palavra, a retêm e dão fruto, com
+          perseverança."<br />
+        </p>
+        <p class="versiculo">Lucas 8:15</p>
+      </div>
+    </section>
 
-      <section id="quem-somos" class="glide">
-        <h1>QUEM SOMOS</h1>
-        <div class="glide__track" data-glide-el="track">
-          <div class="glide__slides">
-            <article class="glide__slide">
-              <h2>MISSÃO</h2>
-              <img src="./img/quem-somos/Missão.svg" alt="triangulo artep" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                perspiciatis ea dolor rem, quisquam qui doloribus laudantium
-                aperiam voluptas modi nisi ad sapiente incidunt tempore corporis
-                pariatur? Alias, maiores quam!
-              </p>
-            </article>
-            <article class="glide__slide">
-              <h2>VISÃO</h2>
-              <img src="./img/quem-somos/Visão.svg" alt="triangulo artep" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ad
-                suscipit at. Dolorum illum ullam impedit culpa, nesciunt est
-                atque ipsa excepturi numquam, amet, architecto distinctio sed
-                quo possimus saepe!
-              </p>
-            </article>
-            <article class="glide__slide">
-              <h2>VALORES</h2>
-              <img src="./img/quem-somos/Valores.svg" alt="triangulo artep" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Expedita, veniam? Tempore vero dolore corporis nemo?
-                Reprehenderit, dolorem voluptates tenetur architecto,
-                dignissimos voluptatibus fugiat perferendis tempore voluptas
-                ratione, velit non aperiam!
-              </p>
-            </article>
+    <section id="quem-somos" class="glide-quem-somos">
+      <h1>QUEM SOMOS</h1>
+      <div class="glide__track" data-glide-el="track">
+        <div class="glide__slides">
+          <article class="glide__slide">
+            <h2>MISSÃO</h2>
+            <img src="./img/quem-somos/Missão.svg" alt="triangulo artep" />
+            <p>
+              O propósito de nossa empresa é participar de projetos que
+              beneficiem o desenvolvimento de nossa comunidade.
+            </p>
+          </article>
+          <article class="glide__slide">
+            <h2>VISÃO</h2>
+            <img src="./img/quem-somos/Visão.svg" alt="triangulo artep" />
+            <p>
+              A ARTEP pretende, com seus projetos, atingir um patamar de
+              reconhecimento entre o mercado de construção civil.
+            </p>
+          </article>
+          <article class="glide__slide">
+            <h2>VALORES</h2>
+            <img src="./img/quem-somos/Valores.svg" alt="triangulo artep" />
+            <p>
+              Zelo pelo cliente;<br />Zelo pela obra;<br />Zelo material e mão
+              de obra;<br />Comprometimento em cada etapa da obra;
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <div data-glide-el="controls[nav]" class="botoes">
+        <button data-glide-dir="=0"></button>
+        <button data-glide-dir="=1"></button>
+        <button data-glide-dir="=2"></button>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <h1>NOSSOS SERVIÇOS</h1>
+      <p>Atualmente a ARTEP oferece os seguintes serviços diferenciados:</p>
+      <div class="cards">
+        <div class="container-card">
+          <div class="card card-1">
+            <img src="./img/servicos/Desenho - Escavações .svg" alt="Gravações e Estacas Raiz" class="frente" />
+            <span class="verso disabled">
+              As estacas possuem ampla variedade de dimensões, formatos e
+              modelos – fator que garante abrangência de atendimento a
+              demandas de projetos.
+            </span>
           </div>
+          <h2 class="legenda">GRAVAÇÕES E ESTACAS RAIZ</h2>
+          <img src="./img/servicos/cotas.svg" />
         </div>
-
-        <div data-glide-el="controls[nav]" class="botoes">
-          <button data-glide-dir="=0"></button>
-          <button data-glide-dir="=1"></button>
-          <button data-glide-dir="=2"></button>
+        <div class="container-card">
+          <div class="card card-2">
+            <img src="./img/servicos/Desenho - Fundações Diversas.svg" alt="Fundações Diversas" class="frente" />
+            <span class="verso disabled">
+              A execução de fundações diversas para edifícios e outras obras
+              de engenharia civil, inclusive a cravação de estacas
+            </span>
+          </div>
+          <h2 class="legenda">FUNDAÇÕES DIVERSAS</h2>
+          <img src="./img/servicos/cotas.svg" />
         </div>
-      </section>
-
-      <section id="servicos">
-        <h1>NOSSOS SERVIÇOS</h1>
-        <p>Atualmente a ARTEP oferece os seguintes serviços diferenciados:</p>
-        <div class="cards">
-          <div class="container-card">
-            <div class="card card-1">
-              <img
-                src="./img/servicos/Desenho - Escavações .svg"
-                alt="Gravações e Estacas Raiz"
-                class="frente"
-              />
-              <span class="verso disabled">
-                As estacas possuem ampla variedade de dimensões, formatos e
-                modelos – fator que garante abrangência de atendimento a
-                demandas de projetos.
-              </span>
-            </div>
-            <h2 class="legenda">GRAVAÇÕES E ESTACAS RAIZ</h2>
-            <img src="./img/servicos/cotas.svg" />
+        <div class="container-card">
+          <div class="card card-3">
+            <img src="./img/servicos/Desenho - Sondagem.svg" alt="terraplanagem" class="frente" />
+            <span class="verso disabled">
+              O conjunto de operações de escavação, transporte, depósito e
+              compactação de terras, necessárias à realização de uma obra.
+            </span>
           </div>
-          <div class="container-card">
-            <div class="card card-2">
-              <img
-                src="./img/servicos/Desenho - Fundações Diversas.svg"
-                alt="Fundações Diversas"
-                class="frente"
-              />
-              <span class="verso disabled">
-                A execução de fundações diversas para edifícios e outras obras
-                de engenharia civil, inclusive a cravação de estacas
-              </span>
-            </div>
-            <h2 class="legenda">FUNDAÇÕES DIVERSAS</h2>
-            <img src="./img/servicos/cotas.svg" />
-          </div>
-          <div class="container-card">
-            <div class="card card-3">
-              <img
-                src="./img/servicos/Desenho - Sondagem.svg"
-                alt="terraplanagem"
-                class="frente"
-              />
-              <span class="verso disabled">
-                O conjunto de operações de escavação, transporte, depósito e
-                compactação de terras, necessárias à realização de uma obra.
-              </span>
-            </div>
-            <h2 class="legenda">TERRAPLANAGEM</h2>
-            <img src="./img/servicos/cotas.svg" />
-          </div>
+          <h2 class="legenda">TERRAPLANAGEM</h2>
+          <img src="./img/servicos/cotas.svg" />
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+    <section id="clientes" class="glide-clientes">
+      <h1>CLIENTES</h1>
+      <div class="glide__track" data-glide-el="track">
+        <div class="glide__slides">
+          <article class="glide__slide">
+            <img class="triangulo" src="./img/clientes/Ativo1.svg" />
+            <img class="cliente" src="./img/clientes/Cliente1.svg" />
+          </article>
+          <article class="glide__slide">
+            <img class="triangulo" src="./img/clientes/Ativo2.svg" />
+            <img class="cliente" src="./img/clientes/Cliente2.svg" />
+          </article>
+          <article class="glide__slide">
+            <img class="triangulo" src="./img/clientes/Ativo3.svg" />
+            <img class="cliente" src="./img/clientes/Cliente3.svg" />
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="contato">
+      <h1>CONTATO</h1>
+      <div class="form">
+        <p>Entre em contato conosco</p>
+        <form class="form-contato">
+          <label for="input-nome">Nome <b>*</b></label>
+          <input type="text" id="input-nome" placeholder="Insira seu nome" /><br>
+          <label for="input-email">Email <b>*</b></label>
+          <input type="email" id="input-email" placeholder="Insira seu email" /><br>
+          <label for="setor">Setor <b>*</b></label>
+          <select id="setor">
+            <option value="" disabled selected hidden>selecione o setor</option>
+            <option value="daniela@artepengenharia.com.br">Financeiro</option>
+            <option value="fabio@artepengenharia.com.br">Comercial</option>
+            <option value="adriane@artepengenharia.com.br">Administrativo</option>
+            <option value="bruna@artepengenharia.com.br">Recursos Humanos</option>
+          </select><br>
+          <label for="mensagem">Mensagem <b>*</b></label>
+          <textarea id="mensagem" placeholder="Deixe sua mensagem"></textarea><br>
+          <button type="button" class="botao">ENVIAR</button>
+        </form>
+      </div>
+    </section>
+    <footer class="contato-menu">
+      <a href="https://www.instagram.com/artepengenharia/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://goo.gl/maps/EyoqSRJzVFEC9fHj8" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+      <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5571999962448" target="_blank"><i
+          class="fas fa-phone-alt"></i></a>
+    </footer>
+  </main>
 
-    <script src="./js/glide.js"></script>
-    <script src="./js/main.js" type="text/javascript"></script>
+  <script src="./js/glide.js"></script>
+  <script src="./js/main.js" type="text/javascript"></script>
 </body>
 
 </html>
